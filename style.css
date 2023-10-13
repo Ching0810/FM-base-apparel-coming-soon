@@ -150,12 +150,12 @@ body {
     padding: 0;
   }
   .container .card .left .card-content .content h1 {
-    font-size: 4vw;
+    font-size: 5vw;
     letter-spacing: 1vw;
     margin-bottom: 2vw;
   }
   .container .card .left .card-content .content h1 span {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   .container .card .left .card-content .content p {
     line-height: 2vw;
@@ -192,7 +192,7 @@ body {
     justify-content: end;
   }
   .container .card .right .model .model-img {
-    height: 50vw;
+    height: 55vw;
     z-index: 1;
   }
 }/*# sourceMappingURL=style.css.map */

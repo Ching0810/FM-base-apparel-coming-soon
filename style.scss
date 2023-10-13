@@ -144,22 +144,20 @@ body {
             width: 10vw;
             margin-bottom: 7vw;
           }
-        
           picture {
             display: none;
           }
-        
           .content {
             position: relative;
             text-align: left;
             z-index: 1;
             padding: 0;
             h1 {
-              font-size: 4vw;
+              font-size: 5vw;
               letter-spacing: 1vw;
               margin-bottom: 2vw;
               span {
-                font-size: 4vw;
+                font-size: 5vw;
               }
             }
             p {
@@ -197,7 +195,7 @@ body {
           display: flex;
           justify-content: end;
           .model-img {
-            height: 50vw;
+            height: 55vw;
             z-index: 1;
           }
         }

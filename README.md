@@ -1,4 +1,4 @@
-# Frontend Mentor - Huddle landing page with single introductory section
+# Frontend Mentor - Base apparel coming soon
 
 This is a layout practicing project from frontend mentor (https://www.frontendmentor.io).
 <br/>
@@ -32,7 +32,13 @@ Users should be able to:
 
 ### Screenshot
 
-Mobile mode:
+Mobile mode (20231013):
+<br/>
+<img src='./images/Screenshot 2023-10-13 at 22.22.39.png' width=300px>
+
+Desktop mode:
+<br/>
+<img src='./images/Screenshot 2023-10-13 at 22.32.01.png' width=700px>
 
 
 
