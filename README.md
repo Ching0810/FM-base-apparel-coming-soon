@@ -55,7 +55,7 @@ Live link: https://admirable-baklava-fdfa6c.netlify.app/
 
 1. Follow mobile first principle to finish responsive web design
 2. Use <picture>, <source> element to achieve RWD design
-
+3. Use <img> element combine with object-fit, height & width property to control background image always as height as card
 
 ### Continued development
 

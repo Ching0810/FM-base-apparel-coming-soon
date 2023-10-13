@@ -23,53 +23,85 @@ body {
 .container .card .left .background {
   display: none;
 }
-.container .card .left .logo {
-  padding: 5vw;
-  width: 30vw;
+.container .card .left .card-content .logo {
+  padding: 8vw 10vw;
+  width: 45vw;
 }
-.container .card .left .model .model-img {
+.container .card .left .card-content .model .model-img {
   width: 100%;
 }
-.container .card .left .content {
+.container .card .left .card-content .content {
   padding: 15vw 10vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   text-align: center;
 }
-.container .card .left .content h1 {
-  font-size: 13vw;
+.container .card .left .card-content .content h1 {
+  font-size: 11vw;
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 3vw;
+  margin-bottom: 4vw;
 }
-.container .card .left .content h1 span {
+.container .card .left .card-content .content h1 span {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 13vw;
+  font-size: 11vw;
   font-weight: 400;
   color: hsl(0, 6%, 24%);
 }
-.container .card .left .content p {
+.container .card .left .card-content .content p {
   font-weight: 200;
   line-height: 5vw;
+  font-size: 4vw;
+  margin-bottom: 8vw;
 }
-.container .card .left .content input {
-  all: unset;
+.container .card .left .card-content .content form {
   width: 100%;
-  height: 10vw;
-  border-radius: 5vw;
+  position: relative;
+}
+.container .card .left .card-content .content form input {
+  all: unset;
+  box-sizing: border-box;
+  width: 100%;
+  height: 12vw;
+  border-radius: 6vw;
   border: 1px solid hsl(0, 36%, 70%);
+  margin-bottom: 9vw;
+  padding-left: 6vw;
+  text-align: left;
+  font-size: 4vw;
 }
-.container .card .left .content input::-moz-placeholder {
+.container .card .left .card-content .content form input::-moz-placeholder {
   color: hsl(0, 36%, 70%);
   text-align: left;
-  padding-left: 5vw;
+  font-size: 4vw;
 }
-.container .card .left .content input::placeholder {
+.container .card .left .card-content .content form input::placeholder {
   color: hsl(0, 36%, 70%);
   text-align: left;
-  padding-left: 5vw;
+  font-size: 4vw;
+}
+.container .card .left .card-content .content form button {
+  all: unset;
+  background: url(./images/icon-arrow.svg);
+  background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  border-radius: 7.5vw;
+  width: 18vw;
+  height: 12vw;
+  top: 0;
+  right: 0;
+  box-shadow: 2vw 4vw 4vw #dddada;
+  cursor: pointer;
+}
+.container .card .left .card-content .content form button .arrow {
+  height: 40%;
+  margin: 0 auto;
+  display: block;
 }
 .container .card .right {
   display: none;
@@ -92,38 +124,65 @@ body {
   .container .card .left .background {
     display: inline;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     -o-object-fit: cover;
        object-fit: cover;
     width: auto;
     height: 100%;
   }
-  .container .card .left .logo {
-    position: relative;
-    z-index: 2;
+  .container .card .left .card-content {
+    padding: 4vw 15vw 5vw 12vw;
   }
-  .container .card .left picture {
+  .container .card .left .card-content .logo {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    width: 10vw;
+    margin-bottom: 7vw;
+  }
+  .container .card .left .card-content picture {
     display: none;
   }
-  .container .card .left .content {
+  .container .card .left .card-content .content {
     position: relative;
-    padding: 5vw;
     text-align: left;
-    z-index: 2;
+    z-index: 1;
+    padding: 0;
   }
-  .container .card .left .content h1 {
+  .container .card .left .card-content .content h1 {
     font-size: 4vw;
     letter-spacing: 1vw;
+    margin-bottom: 2vw;
   }
-  .container .card .left .content h1 span {
+  .container .card .left .card-content .content h1 span {
     font-size: 4vw;
   }
-  .container .card .left .content p {
+  .container .card .left .card-content .content p {
     line-height: 2vw;
+    font-size: 1.5vw;
+    margin-bottom: 3vw;
   }
-  .container .card .left .content input {
-    height: 3vw;
-    border-radius: 3vw;
+  .container .card .left .card-content .content form input {
+    height: 4vw;
+    border-radius: 4vw;
+    margin-bottom: 0;
+    padding-left: 2vw;
+    font-size: 1.5vw;
+  }
+  .container .card .left .card-content .content form input::-moz-placeholder {
+    font-size: 1.5vw;
+  }
+  .container .card .left .card-content .content form input::placeholder {
+    font-size: 1.5vw;
+  }
+  .container .card .left .card-content .content form button {
+    border-radius: 4vw;
+    width: 7vw;
+    height: 4vw;
+    box-shadow: 1vw 1.5vw 1.5vw #dddada;
+  }
+  .container .card .left .card-content .content form button .arrow {
+    height: 35%;
   }
   .container .card .right {
     display: block;
@@ -134,6 +193,6 @@ body {
   }
   .container .card .right .model .model-img {
     height: 50vw;
-    z-index: 2;
+    z-index: 1;
   }
 }/*# sourceMappingURL=style.css.map */
