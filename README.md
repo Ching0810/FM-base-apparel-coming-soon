@@ -36,9 +36,13 @@ Mobile mode (20231013):
 <br/>
 <img src='./images/Screenshot 2023-10-13 at 22.22.39.png' width=300px>
 
-Desktop mode:
+Desktop mode  (20231013):
 <br/>
-<img src='./images/Screenshot 2023-10-13 at 22.32.01.png' width=700px>
+<img src='./images/Screenshot 2023-10-14 at 17.40.33.png' width=700px>
+
+Wrong email form (20231014):
+<br/>
+<img src='./images/Screenshot 2023-10-14 at 17.37.56.png' width=700px>
 
 
 
@@ -62,11 +66,12 @@ Live link: https://admirable-baklava-fdfa6c.netlify.app/
 1. Follow mobile first principle to finish responsive web design
 2. Use <picture>, <source> element to achieve RWD design
 3. Use <img> element combine with object-fit, height & width property to control background image always as height as card
+4. Use JS to control email validation, pop up custom error message with wrong email form
 
 ### Continued development
 
 1. Simplify redundant class and merge multiple CSS setting
-
+2. Input border color with email validation still exist weird performance
 
 ### Useful resources
 
