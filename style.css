@@ -56,8 +56,14 @@ body {
   font-size: 4vw;
   margin-bottom: 8vw;
 }
+.container .card .left .card-content .content form.was-validated #email-input:invalid {
+  border: 2px solid hsl(0, 93%, 68%);
+}
 .container .card .left .card-content .content form {
   width: 100%;
+  position: relative;
+  margin-bottom: 9vw;
+  text-align: left;
   position: relative;
 }
 .container .card .left .card-content .content form input {
@@ -66,21 +72,30 @@ body {
   width: 100%;
   height: 12vw;
   border-radius: 6vw;
-  border: 1px solid hsl(0, 36%, 70%);
-  margin-bottom: 9vw;
+  border: 1px solid hsl(0, 80%, 86%);
+  color: hsl(0, 80%, 86%);
   padding-left: 6vw;
-  text-align: left;
   font-size: 4vw;
 }
 .container .card .left .card-content .content form input::-moz-placeholder {
-  color: hsl(0, 36%, 70%);
+  color: hsl(0, 80%, 86%);
   text-align: left;
   font-size: 4vw;
 }
 .container .card .left .card-content .content form input::placeholder {
-  color: hsl(0, 36%, 70%);
+  color: hsl(0, 80%, 86%);
   text-align: left;
   font-size: 4vw;
+}
+.container .card .left .card-content .content form label {
+  position: absolute;
+  top: 16%;
+  right: 20vw;
+  transform: translateY(-10%);
+  display: none;
+}
+.container .card .left .card-content .content form label img {
+  width: 5vw;
 }
 .container .card .left .card-content .content form button {
   all: unset;
@@ -98,10 +113,20 @@ body {
   box-shadow: 2vw 4vw 4vw #dddada;
   cursor: pointer;
 }
+.container .card .left .card-content .content form button:hover {
+  opacity: 0.7;
+}
 .container .card .left .card-content .content form button .arrow {
   height: 40%;
   margin: 0 auto;
   display: block;
+}
+.container .card .left .card-content .content form p {
+  font-weight: 300;
+  color: hsl(0, 93%, 68%);
+  padding-top: 1.5vw;
+  padding-left: 6vw;
+  display: none;
 }
 .container .card .right {
   display: none;
@@ -162,6 +187,9 @@ body {
     font-size: 1.5vw;
     margin-bottom: 3vw;
   }
+  .container .card .left .card-content .content form {
+    margin-bottom: 0;
+  }
   .container .card .left .card-content .content form input {
     height: 4vw;
     border-radius: 4vw;
@@ -175,6 +203,14 @@ body {
   .container .card .left .card-content .content form input::placeholder {
     font-size: 1.5vw;
   }
+  .container .card .left .card-content .content form label {
+    top: 18%;
+    right: 8vw;
+    transform: translateY(-10%);
+  }
+  .container .card .left .card-content .content form label img {
+    width: 2vw;
+  }
   .container .card .left .card-content .content form button {
     border-radius: 4vw;
     width: 7vw;
@@ -183,6 +219,11 @@ body {
   }
   .container .card .left .card-content .content form button .arrow {
     height: 35%;
+  }
+  .container .card .left .card-content .content form p {
+    padding-top: 0.8vw;
+    padding-left: 2vw;
+    margin-bottom: 0;
   }
   .container .card .right {
     display: block;

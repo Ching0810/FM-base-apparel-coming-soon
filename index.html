@@ -23,9 +23,15 @@
             <h1 class="title">We're <span class="bold">coming soon</span></h1>
             <p>Hello fellow shoppers! We're currently building our new fashion store.
               Add your email below to stay up-to-date with announcements and our launch deals.</p>
-            <form action="post" id="email-form">
-              <input type="email" placeholder="Email Address" id="email-input">
-              <button type="submit"><img src="./images/icon-arrow.svg" alt="" class="arrow"></button>
+            <form id="email-form" novalidate>
+              <input type="email" placeholder="Email Address" id="email-input" required>
+              <label for="email-input" class="error-label">
+                <img src="./images/icon-error.svg" alt="error">
+              </label>
+              <button type="submit" class="button">
+                <img src="./images/icon-arrow.svg" alt="" class="arrow">
+              </button>
+              <p class="error-message">Please provide a valid email</p>
             </form>
           </div>
         </div>
@@ -37,6 +43,7 @@
       </div>
     </div>
   </div>
-  
+
+  <script src="./index.js"></script>
 </body>
 </html>
