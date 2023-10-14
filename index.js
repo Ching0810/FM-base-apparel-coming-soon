@@ -4,14 +4,21 @@ const label = document.querySelector('.error-label')
 const button = document.querySelector('.button')
 const errorMessage = document.querySelector('.error-message')
 
-form.addEventListener('submit', onFormSubmitted) 
-button.addEventListener('click', onFormSubmitted)
+form.addEventListener('submit', validateEmail) 
+input.addEventListener('input', validateEmail)
+button.addEventListener('click', (event) => {
+  const inputValue = input.value.trim();
+  validateEmail(event)
+  if (isEmail(inputValue)) {
+    alert('email validated!!!')
+  }
+})
 
-function onFormSubmitted(event) {
+function validateEmail(event) {
   event.preventDefault()
   event.stopPropagation()
-  const inputValue = input.value.trim()
-  if (!isEmail(inputValue)) {
+  const inputValue = input.value.trim();
+  if (!isEmail(inputValue)) { 
     input.classList.add('was-validated')
     errorMessage.style.display = 'block'
     label.style.display = 'block'
