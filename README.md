@@ -2,7 +2,9 @@
 
 This is a layout practicing project from frontend mentor (https://www.frontendmentor.io).
 <br/>
-RWD design including mobile, tablet & desktop mode, please refer to [link section](#links) or [screenshot section](#screenshot) for results.
+Project builded accroding to RWD design including mobile, tablet & desktop mode. 
+<br/>
+Please refer to [link section](#links) or [screenshot section](#screenshot) for results.
 
 ## Table of contents
 
@@ -60,6 +62,7 @@ Live link: https://admirable-baklava-fdfa6c.netlify.app/
 - Flexbox & grid system
 - Position system
 - Mobile-first workflow
+- JS event & logic control
 
 ### What I learned
 
@@ -71,11 +74,11 @@ Live link: https://admirable-baklava-fdfa6c.netlify.app/
 ### Continued development
 
 1. Simplify redundant class and merge multiple CSS setting
-2. Input border color with email validation still exist weird performance
+2. Input border color with email validation still exist weird performance (already fixed)
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+None
 
 ## Author
 
