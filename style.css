@@ -56,9 +56,6 @@ body {
   font-size: 4vw;
   margin-bottom: 8vw;
 }
-.container .card .left .card-content .content form.was-validated #email-input:invalid {
-  border: 2px solid hsl(0, 93%, 68%);
-}
 .container .card .left .card-content .content form {
   width: 100%;
   position: relative;
@@ -86,6 +83,9 @@ body {
   color: hsl(0, 80%, 86%);
   text-align: left;
   font-size: 4vw;
+}
+.container .card .left .card-content .content form input.was-validated {
+  border: 2px solid hsl(0, 93%, 68%);
 }
 .container .card .left .card-content .content form label {
   position: absolute;

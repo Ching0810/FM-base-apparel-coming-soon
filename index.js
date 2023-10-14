@@ -12,11 +12,11 @@ function onFormSubmitted(event) {
   event.stopPropagation()
   const inputValue = input.value.trim()
   if (!isEmail(inputValue)) {
-    form.classList.add('was-validated')
+    input.classList.add('was-validated')
     errorMessage.style.display = 'block'
     label.style.display = 'block'
   } else {
-    form.classList.remove('was-validated')
+    input.classList.remove('was-validated')
     errorMessage.style.display = 'none'
     label.style.display = 'none'
   }
