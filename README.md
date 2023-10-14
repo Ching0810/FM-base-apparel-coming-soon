@@ -75,6 +75,7 @@ Live link: https://admirable-baklava-fdfa6c.netlify.app/
 
 1. Simplify redundant class and merge multiple CSS setting
 2. Input border color with email validation still exist weird performance (already fixed)
+3. Input should automatically detect whether typed in email is validated and modify CSS setting
 
 ### Useful resources
 
